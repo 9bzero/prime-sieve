@@ -1,30 +1,16 @@
-# Prime Sieve
+# prime-sieve
 
-Animated **Sieve of Eratosthenes** — watch the algorithm eliminate composite numbers and reveal all primes up to N.
+Animated Sieve of Eratosthenes. Watch composite numbers get eliminated one prime at a time.
 
-## How it works
+## How the sieve works
 
-Starting from 2, the sieve marks every multiple of each prime as composite. Numbers that survive all passes are prime. It finds all primes up to N in O(n log log n) time.
+Start with all integers from 2 to N. Take the first unmarked number (a prime). Cross out all its multiples. Repeat until you reach √N. Everything still unmarked is prime.
 
-## Features
+It is an ancient algorithm (~240 BCE) and still one of the most efficient ways to find all primes up to a given limit.
 
-- Adjustable upper bound (up to 1000)
-- Step-by-step animation with configurable speed
-- Color-coded cells: prime (green), composite (red), current factor (yellow)
-- Primes list output with total count
-- Pause / resume / reset controls
-
-## Stack
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646cff?style=flat&logo=vite&logoColor=white)
-
-## Run locally
+## Run
 
 ```bash
-npm install && npm run dev
+npm install
+npm run dev
 ```
-
----
-Made by [9bzero](https://github.com/9bzero)
